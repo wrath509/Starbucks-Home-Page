@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='yolo.js'></script>
+</head>
+<body>
+    <section>
+        <div class="circle">
+        </div>
+        <header > 
+          <a href="#" class="logo"><img src="images/logo.png"></a>
+          <ul>
+              <li>
+                  <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Menu</a>
+            </li>
+            <li>
+                <a href="#">What's New</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+          </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <br>
+                <h2>Its not just a coffee<br>It's<span> Starbucks</span></h2>
+                <p>Edward VIII, also called (from 1936) Prince Eward, duke of Windsor, in full Edward Albert Christian George Andrew Patrick David, (born June 23, 1894, Richmond, Surrey, England—died May 28, 1972, Paris, France), prince of Wales (1911–36) and king of the United Kingdom of Great Britain and Northern Ireland and of the</p>
+                <a href="#">Learn more</a>
+            </div>
+            <br>
+            <div class="imgb">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgslider('img1.png');changecolor('#017143')"></li>
+            <li><img src="thumb2png.png" onclick="imgslider('img2.png');changecolor('#eb7495')"></li>
+            <li><img src="thumb3,png.png" onclick="imgslider('img3.png');changecolor('#d752b1')"></li>
+        </ul>
+        <ul class="thumb2">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgslider(anything){
+    document.querySelector('.starbucks').src = anything;
+        }
+    function changecolor(color){
+           const circle = document.querySelector('.circle');
+           circle.style.background = color;
+    }
+
+    </script>
+</body>
+</html>
